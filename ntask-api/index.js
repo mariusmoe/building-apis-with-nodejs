@@ -3,6 +3,7 @@ import consign from "consign";
 
 const app = express();
 
+// load everything before starting to listen
 consign({verbose: false})
   .include("libs/config.js")
   .then("db.js")
